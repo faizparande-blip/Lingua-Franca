@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#0F2A5C"/>
+  <rect x="24" y="24" width="464" height="464" rx="80" fill="none" stroke="#F5B82E" stroke-width="12"/>
+  <!-- Open Book -->
+  <path d="M256 160 C210 130 140 120 70 130 v230 c70 -10 140 0 186 30" fill="#FAF6EC" stroke="#F5B82E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 160 C302 130 372 120 442 130 v230 c-70 -10 -140 0 -186 30" fill="#FAF6EC" stroke="#F5B82E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 160 v230" stroke="#0F2A5C" stroke-width="16" stroke-linecap="round"/>
+  <!-- Ribbon Bookmark -->
+  <path d="M300 90 v110 l-25 -20 l-25 20 v-110 z" fill="#F5B82E"/>
+  <!-- Text / Initials -->
+  <text x="256" y="445" font-family="'Playfair Display', serif" font-size="44" font-weight="bold" fill="#F5B82E" text-anchor="middle" letter-spacing="4">LINGUA FRANCA</text>
+</svg>
