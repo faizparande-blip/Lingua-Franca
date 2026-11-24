@@ -41,15 +41,15 @@ export default function CourseCard({ course, onSelect }) {
         </h3>
 
         {/* Short Description */}
-        <p className="text-slate-600 text-sm leading-relaxed mb-6">
+        <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
           {course.shortDescription}
         </p>
 
         {/* Features Checklist */}
-        <div className="space-y-2 mb-8">
+        <div className="space-y-2.5 mb-8">
           {course.features?.map((feature, idx) => (
-            <div key={idx} className="flex items-center gap-2.5 text-xs text-slate-700 font-medium">
-              <CheckIcon className="w-4 h-4 shrink-0" />
+            <div key={idx} className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
+              <CheckIcon className="w-4 h-4 shrink-0 text-yellow-dark" />
               <span>{feature}</span>
             </div>
           ))}
@@ -59,7 +59,7 @@ export default function CourseCard({ course, onSelect }) {
       {/* Action CTA */}
       <button
         onClick={() => onSelect ? onSelect(course) : null}
-        className="w-full py-2.5 px-4 rounded-xl border-2 border-navy text-navy font-bold text-sm hover:bg-yellow hover:border-yellow transition-all duration-200 active:scale-[0.97] flex items-center justify-center gap-2 cursor-pointer"
+        className="w-full py-3 px-4 rounded-xl border-2 border-navy text-navy font-bold text-sm sm:text-base hover:bg-yellow hover:border-yellow transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer"
       >
         <span>Learn More & Enquire</span>
         <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

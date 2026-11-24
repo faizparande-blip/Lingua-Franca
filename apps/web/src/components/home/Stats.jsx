@@ -49,7 +49,7 @@ export default function Stats() {
                   {stat.label}
                 </h4>
                 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xs">
+                <p className="text-slate-700 text-sm sm:text-base leading-relaxed max-w-xs">
                   {stat.description}
                 </p>
               </div>

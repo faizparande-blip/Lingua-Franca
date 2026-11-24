@@ -22,7 +22,7 @@ export default function CoursesPreview() {
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy">
             World-Class English Curricula
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed pt-2">
+          <p className="text-slate-700 text-base sm:text-lg leading-relaxed pt-2">
             Structured programmes crafted to elevate communicative mastery, creative expression, and board exam success.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function CoursesPreview() {
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
-          <Link to="/courses" className="btn-navy text-sm font-bold">
+          <Link to="/courses" className="btn-navy inline-flex items-center justify-center px-7 py-3.5 text-sm sm:text-base font-bold shadow-md">
             Explore Course Details & Curriculum
           </Link>
         </div>

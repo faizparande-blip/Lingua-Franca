@@ -62,7 +62,7 @@ export default function Courses() {
             <h3 className="font-serif text-2xl sm:text-3xl font-bold text-navy">
               Unsure which programme fits your child's syllabus?
             </h3>
-            <p className="text-slate-600 text-sm sm:text-base max-w-2xl">
+            <p className="text-slate-700 text-base sm:text-lg max-w-2xl leading-relaxed">
               Speak directly with Ms. Ayeshabi Saheb. We evaluate the student's current proficiency and suggest the precise curriculum module to maximise grades.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function Courses() {
           <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">
             <button
               onClick={() => handleOpenDemo(null)}
-              className="btn-yellow w-full sm:w-auto px-7 py-3.5 text-sm font-bold shadow-sm cursor-pointer"
+              className="btn-yellow w-full sm:w-auto px-7 py-3.5 text-sm sm:text-base font-bold shadow-sm cursor-pointer"
             >
               Book a Free Demo
             </button>
@@ -78,7 +78,7 @@ export default function Courses() {
               href="https://wa.me/919167217749?text=Hello%20Ms.%20Ayeshabi%2C%20I%20would%20like%20course%20guidance%20for%20my%20child."
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline w-full sm:w-auto px-7 py-3.5 text-sm font-bold text-center flex items-center justify-center gap-2"
+              className="btn-outline w-full sm:w-auto px-7 py-3.5 text-sm sm:text-base font-bold text-center flex items-center justify-center gap-2"
             >
               <MessageIcon className="w-4 h-4" />
               <span>WhatsApp Us</span>
@@ -108,16 +108,16 @@ export default function Courses() {
               </h3>
             </div>
 
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
               {selectedCourse.description}
             </p>
 
             <div className="space-y-3">
-              <h4 className="font-serif text-base font-bold text-navy">Syllabus Highlights:</h4>
+              <h4 className="font-serif text-base sm:text-lg font-bold text-navy">Syllabus Highlights:</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {selectedCourse.features?.map((f, i) => (
-                  <div key={i} className="flex items-center gap-2 text-xs sm:text-sm text-slate-700 font-medium">
-                    <CheckIcon className="w-4 h-4 shrink-0" />
+                  <div key={i} className="flex items-center gap-2 text-sm sm:text-base text-slate-700 font-medium">
+                    <CheckIcon className="w-4 h-4 shrink-0 text-yellow-dark" />
                     <span>{f}</span>
                   </div>
                 ))}
@@ -127,7 +127,7 @@ export default function Courses() {
             <div className="pt-4 border-t border-cream-300 flex flex-col sm:flex-row gap-3">
               <button
                 onClick={() => setShowDemoModal(true)}
-                className="btn-yellow flex-1 py-3 px-5 text-sm font-bold shadow-sm cursor-pointer"
+                className="btn-yellow flex-1 py-3 px-5 text-sm sm:text-base font-bold shadow-sm cursor-pointer"
               >
                 Book Free Demo for this Course
               </button>
@@ -137,7 +137,7 @@ export default function Courses() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline py-3 px-5 text-sm font-bold flex items-center justify-center gap-2"
+                className="btn-outline py-3 px-5 text-sm sm:text-base font-bold flex items-center justify-center gap-2"
               >
                 <MessageIcon className="w-4 h-4" />
                 <span>WhatsApp</span>

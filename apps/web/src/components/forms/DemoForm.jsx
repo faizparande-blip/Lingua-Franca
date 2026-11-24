@@ -109,7 +109,7 @@ export default function DemoForm({ preselectedCourse = '' }) {
 
         <h3 className="font-serif text-2xl font-bold text-navy">Demo Session Requested!</h3>
         
-        <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed">
+        <p className="text-slate-700 text-base max-w-md mx-auto leading-relaxed">
           Your demo session request has been successfully submitted! Thank you, <span className="text-navy font-bold">{formData.fullName}</span>. Ms. Ayeshabi Saheb and our team will get in touch with you shortly to schedule your free demo session.
         </p>
 
@@ -118,13 +118,13 @@ export default function DemoForm({ preselectedCourse = '' }) {
             href={buildWhatsAppLink(formatDemoWhatsAppMessage(formData))}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-yellow w-full sm:w-auto px-6 py-2.5 text-xs font-bold shadow-sm"
+            className="btn-yellow w-full sm:w-auto px-6 py-3 text-sm font-bold shadow-sm"
           >
             Connect on WhatsApp Now
           </a>
           <button
             onClick={resetForm}
-            className="btn-outline w-full sm:w-auto px-6 py-2.5 text-xs font-semibold cursor-pointer"
+            className="btn-outline w-full sm:w-auto px-6 py-3 text-sm font-semibold cursor-pointer"
           >
             Submit Another Request
           </button>
@@ -139,13 +139,13 @@ export default function DemoForm({ preselectedCourse = '' }) {
         <h3 className="font-serif text-2xl font-bold text-navy flex items-center gap-2">
           <span>Book a Free Demo Class</span>
         </h3>
-        <p className="text-slate-600 text-xs sm:text-sm mt-1">
+        <p className="text-slate-700 text-sm mt-1">
           Experience our personalised teaching approach with Ms. Ayeshabi Saheb.
         </p>
       </div>
 
       {serverError && (
-        <div className="p-3 bg-red-50 border border-red-200 rounded-xl text-xs text-red-700 flex items-center gap-2">
+        <div className="p-3 bg-red-50 border border-red-200 rounded-xl text-sm text-red-700 flex items-center gap-2">
           <AlertIcon className="w-4 h-4 shrink-0" />
           <span>{serverError}</span>
         </div>
@@ -153,7 +153,7 @@ export default function DemoForm({ preselectedCourse = '' }) {
 
       {/* Full Name */}
       <div>
-        <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-1.5">
+        <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-navy mb-1.5">
           Student / Parent Full Name <span className="text-yellow-dark">*</span>
         </label>
         <input
@@ -164,15 +164,15 @@ export default function DemoForm({ preselectedCourse = '' }) {
           placeholder="e.g. Aryan Malhotra"
           className={`w-full px-4 py-2.5 rounded-xl bg-cream border-2 ${
             errors.fullName ? 'border-red-400' : 'border-cream-300 focus:border-navy'
-          } text-navy text-sm placeholder-slate-400 transition-colors`}
+          } text-navy text-base placeholder-slate-400 transition-colors`}
         />
-        {errors.fullName && <p className="text-red-500 text-xs mt-1 font-medium">{errors.fullName}</p>}
+        {errors.fullName && <p className="text-red-500 text-xs sm:text-sm mt-1 font-medium">{errors.fullName}</p>}
       </div>
 
       {/* Email & Phone Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-1.5">
+          <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-navy mb-1.5">
             Email Address <span className="text-yellow-dark">*</span>
           </label>
           <input
@@ -183,13 +183,13 @@ export default function DemoForm({ preselectedCourse = '' }) {
             placeholder="name@example.com"
             className={`w-full px-4 py-2.5 rounded-xl bg-cream border-2 ${
               errors.email ? 'border-red-400' : 'border-cream-300 focus:border-navy'
-            } text-navy text-sm placeholder-slate-400 transition-colors`}
+            } text-navy text-base placeholder-slate-400 transition-colors`}
           />
-          {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
+          {errors.email && <p className="text-red-500 text-xs sm:text-sm mt-1 font-medium">{errors.email}</p>}
         </div>
 
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-1.5">
+          <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-navy mb-1.5">
             Phone / WhatsApp <span className="text-yellow-dark">*</span>
           </label>
           <input
@@ -200,23 +200,23 @@ export default function DemoForm({ preselectedCourse = '' }) {
             placeholder="10-digit number"
             className={`w-full px-4 py-2.5 rounded-xl bg-cream border-2 ${
               errors.phone ? 'border-red-400' : 'border-cream-300 focus:border-navy'
-            } text-navy text-sm placeholder-slate-400 transition-colors`}
+            } text-navy text-base placeholder-slate-400 transition-colors`}
           />
-          {errors.phone && <p className="text-red-500 text-xs mt-1 font-medium">{errors.phone}</p>}
+          {errors.phone && <p className="text-red-500 text-xs sm:text-sm mt-1 font-medium">{errors.phone}</p>}
         </div>
       </div>
 
       {/* Grade Level & Preferred Course */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-1.5">
+          <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-navy mb-1.5">
             Current Grade / Level <span className="text-yellow-dark">*</span>
           </label>
           <select
             name="gradeLevel"
             value={formData.gradeLevel}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-xl bg-cream border-2 border-cream-300 focus:border-navy text-navy text-sm transition-colors"
+            className="w-full px-4 py-2.5 rounded-xl bg-cream border-2 border-cream-300 focus:border-navy text-navy text-base transition-colors"
           >
             <option value="Primary (Grade 3-5)">Primary (Grade 3-5)</option>
             <option value="Lower Secondary (Grade 6-8)">Lower Secondary (Grade 6-8)</option>
@@ -228,14 +228,14 @@ export default function DemoForm({ preselectedCourse = '' }) {
         </div>
 
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-1.5">
+          <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-navy mb-1.5">
             Target Course <span className="text-yellow-dark">*</span>
           </label>
           <select
             name="preferredCourse"
             value={formData.preferredCourse}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-xl bg-cream border-2 border-cream-300 focus:border-navy text-navy text-sm transition-colors"
+            className="w-full px-4 py-2.5 rounded-xl bg-cream border-2 border-cream-300 focus:border-navy text-navy text-base transition-colors"
           >
             {courses.map((course) => (
               <option key={course.id} value={course.title}>
@@ -248,14 +248,14 @@ export default function DemoForm({ preselectedCourse = '' }) {
 
       {/* Session Preference */}
       <div>
-        <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-2">
+        <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-navy mb-2">
           Session Preference
         </label>
         <div className="grid grid-cols-3 gap-3">
           {['Online', 'Offline (Mumbai)', 'Flexible'].map((type) => (
             <label
               key={type}
-              className={`flex items-center justify-center py-2 px-3 rounded-xl border-2 text-xs font-bold cursor-pointer transition-all duration-200 ${
+              className={`flex items-center justify-center py-2.5 px-3 rounded-xl border-2 text-xs sm:text-sm font-bold cursor-pointer transition-all duration-200 ${
                 formData.sessionPreference === type
                   ? 'border-yellow bg-yellow text-navy'
                   : 'border-cream-300 bg-cream text-slate-700 hover:border-navy'
@@ -277,7 +277,7 @@ export default function DemoForm({ preselectedCourse = '' }) {
 
       {/* Notes */}
       <div>
-        <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-1.5">
+        <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-navy mb-1.5">
           Student's Current Needs / Goals (Optional)
         </label>
         <textarea
@@ -286,7 +286,7 @@ export default function DemoForm({ preselectedCourse = '' }) {
           value={formData.notes}
           onChange={handleChange}
           placeholder="e.g. preparing for IGCSE FLE exam next term, wants to improve essay writing structure..."
-          className="w-full px-4 py-2.5 rounded-xl bg-cream border-2 border-cream-300 focus:border-navy text-navy text-sm placeholder-slate-400 transition-colors resize-none"
+          className="w-full px-4 py-2.5 rounded-xl bg-cream border-2 border-cream-300 focus:border-navy text-navy text-base placeholder-slate-400 transition-colors resize-none"
         />
       </div>
 
@@ -294,7 +294,7 @@ export default function DemoForm({ preselectedCourse = '' }) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="btn-yellow w-full py-3.5 px-6 font-bold text-sm shadow-sm flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+        className="btn-yellow w-full py-3.5 px-6 font-bold text-sm sm:text-base shadow-sm flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
       >
         {isSubmitting ? (
           <>
@@ -309,7 +309,7 @@ export default function DemoForm({ preselectedCourse = '' }) {
         )}
       </button>
 
-      <p className="text-[11px] text-slate-500 text-center leading-normal mt-2.5">
+      <p className="text-xs text-slate-500 text-center leading-normal mt-2.5">
         Your details will be shared with Lingua Franca via WhatsApp to process your enquiry.
       </p>
     </form>

@@ -22,12 +22,12 @@ export default function Footer() {
               </div>
             </div>
             
-            <p className="text-cream/80 leading-relaxed text-xs sm:text-sm">
+            <p className="text-cream/85 leading-relaxed text-sm sm:text-base">
               Luxury, international English language education led by Ms. Ayeshabi Saheb. 18+ years of teaching excellence spanning Cambridge Checkpoints, IGCSE, A Levels, and ICSE.
             </p>
 
             <div className="pt-2">
-              <p className="font-serif italic text-yellow text-sm font-medium">"Learn English. Explore the World."</p>
+              <p className="font-serif italic text-yellow text-sm sm:text-base font-medium">"Learn English. Explore the World."</p>
             </div>
           </div>
 
@@ -45,17 +45,17 @@ export default function Footer() {
                     {isAnchor ? (
                       <a
                         href={link.path}
-                        className="text-cream/80 hover:text-yellow flex items-center gap-1.5 transition-colors text-xs sm:text-sm"
+                        className="text-cream/85 hover:text-yellow flex items-center gap-1.5 transition-colors text-sm sm:text-base"
                       >
-                        <ChevronRightIcon className="w-3.5 h-3.5" />
+                        <ChevronRightIcon className="w-3.5 h-3.5 text-yellow" />
                         <span>{link.label}</span>
                       </a>
                     ) : (
                       <Link
                         to={link.path}
-                        className="text-cream/80 hover:text-yellow flex items-center gap-1.5 transition-colors text-xs sm:text-sm"
+                        className="text-cream/85 hover:text-yellow flex items-center gap-1.5 transition-colors text-sm sm:text-base"
                       >
-                        <ChevronRightIcon className="w-3.5 h-3.5" />
+                        <ChevronRightIcon className="w-3.5 h-3.5 text-yellow" />
                         <span>{link.label}</span>
                       </Link>
                     )}
@@ -76,10 +76,10 @@ export default function Footer() {
                 <li key={course.id}>
                   <Link
                     to="/courses"
-                    className="text-cream/80 hover:text-yellow flex items-center justify-between transition-colors group text-xs sm:text-sm"
+                    className="text-cream/85 hover:text-yellow flex items-center justify-between transition-colors group text-sm sm:text-base gap-2"
                   >
                     <span className="truncate">{course.title}</span>
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-navy-light text-yellow font-semibold border border-yellow/30">
+                    <span className="text-[10px] px-2 py-0.5 rounded bg-navy-light text-yellow font-semibold border border-yellow/30 shrink-0">
                       {course.level}
                     </span>
                   </Link>
@@ -95,21 +95,21 @@ export default function Footer() {
               Contact Details
             </h4>
 
-            <div className="space-y-3 text-xs sm:text-sm text-cream/80">
+            <div className="space-y-3 text-sm sm:text-base text-cream/85">
               <div className="flex items-start gap-3">
-                <MapPinIcon className="w-5 h-5 shrink-0 mt-0.5" />
+                <MapPinIcon className="w-5 h-5 shrink-0 mt-0.5 text-yellow" />
                 <span>
                   B/16, 2nd Floor, Anu Apartment, Milan Subway Road, Santacruz West, Mumbai - 400054, India.
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <PhoneIcon className="w-5 h-5 shrink-0" />
+                <PhoneIcon className="w-5 h-5 shrink-0 text-yellow" />
                 <div className="flex flex-col">
                   <a href="tel:+919167217749" className="hover:text-yellow transition-colors font-medium">
                     +91 91672 17749
                   </a>
-                  <a href="tel:+919833468057" className="hover:text-yellow transition-colors">
+                  <a href="tel:+919833468057" className="hover:text-yellow transition-colors text-cream/70 text-xs sm:text-sm">
                     +91 98334 68057
                   </a>
                 </div>
@@ -120,7 +120,7 @@ export default function Footer() {
                   href="https://wa.me/919167217749?text=Hello%20Ms.%20Ayeshabi%2C%20I%20would%20like%20to%20enquire%20about%20English%20Tutorials%20at%20Lingua%20Franca."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-yellow text-navy px-4 py-2 inline-flex items-center gap-2 text-xs font-bold shadow-sm"
+                  className="btn-yellow text-navy px-4 py-2.5 inline-flex items-center gap-2 text-sm font-bold shadow-sm"
                 >
                   <MessageIcon className="w-4 h-4" />
                   <span>Chat on WhatsApp</span>
@@ -131,7 +131,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-cream-300/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream/70">
+        <div className="mt-12 pt-8 border-t border-cream-300/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-cream/75">
           <p>© {new Date().getFullYear()} Lingua Franca – The English Tutorials. All rights reserved.</p>
           <div className="flex items-center gap-4 sm:gap-6">
             <span className="text-yellow">Online & Offline Sessions Available</span>

@@ -31,7 +31,7 @@ export default function Home() {
               Key Pedagogical Features
             </h2>
             <div className="w-16 h-1 bg-yellow mx-auto mt-2 rounded-full" />
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed pt-2">
+            <p className="text-slate-700 text-base sm:text-lg leading-relaxed pt-2">
               Empowering students across international boards with targeted English language instruction.
             </p>
           </div>
@@ -41,8 +41,8 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-white border border-yellow flex items-center justify-center text-navy mb-4">
                 <ChalkboardIcon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">Interactive Board Work</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-2">Interactive Board Work</h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Live composition analysis and real-time sentence restructuring techniques.
               </p>
             </div>
@@ -51,8 +51,8 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-white border border-yellow flex items-center justify-center text-navy mb-4">
                 <PencilIcon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">Targeted Essay Writing</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-2">Targeted Essay Writing</h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Step-by-step guidance on directed writing, discursive essays, and descriptive prose.
               </p>
             </div>
@@ -61,8 +61,8 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-white border border-yellow flex items-center justify-center text-navy mb-4">
                 <BookIcon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">Bespoke Worksheets</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-2">Bespoke Worksheets</h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Custom worksheets tailored specifically to student grade level and board specifications.
               </p>
             </div>
@@ -71,8 +71,8 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-white border border-yellow flex items-center justify-center text-navy mb-4">
                 <GraduationCapIcon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">18+ Years Pedagogy</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-2">18+ Years Pedagogy</h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Proven track record in Cambridge Checkpoint, IGCSE, A Levels, and ICSE examinations.
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
               Academic Excellence in Focus
             </h2>
             <div className="w-16 h-1 bg-yellow mx-auto mt-2 rounded-full" />
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed pt-2">
+            <p className="text-slate-700 text-base sm:text-lg leading-relaxed pt-2">
               A glimpse into our personalised tutorials, classroom engagement, and curated student worksheets.
             </p>
           </div>
@@ -103,8 +103,8 @@ export default function Home() {
               <div className="w-16 h-16 mx-auto rounded-2xl bg-cream border border-yellow flex items-center justify-center text-navy">
                 <BookIcon className="w-8 h-8" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-navy">Curated Study Material</h3>
-              <p className="text-xs text-slate-600">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-navy">Curated Study Material</h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Detailed notes, mark-scheme breakdowns, and exemplary candidate responses.
               </p>
             </div>
@@ -113,8 +113,8 @@ export default function Home() {
               <div className="w-16 h-16 mx-auto rounded-2xl bg-cream border border-yellow flex items-center justify-center text-navy">
                 <GlobeIcon className="w-8 h-8" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-navy">Global Classrooms</h3>
-              <p className="text-xs text-slate-600">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-navy">Global Classrooms</h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Small-group online sessions connecting motivated students across time zones.
               </p>
             </div>
@@ -123,8 +123,8 @@ export default function Home() {
               <div className="w-16 h-16 mx-auto rounded-2xl bg-cream border border-yellow flex items-center justify-center text-navy">
                 <AwardIcon className="w-8 h-8" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-navy">Proven Examination Results</h3>
-              <p className="text-xs text-slate-600">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-navy">Proven Examination Results</h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Consistent top percentile grades in IGCSE First Language English & A Levels.
               </p>
             </div>

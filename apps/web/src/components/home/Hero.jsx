@@ -26,10 +26,10 @@ export default function Hero() {
 
             {/* Main Headings */}
             <div className="space-y-1 sm:space-y-2">
-              <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-yellow leading-[1.05]">
+              <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-yellow leading-[1.1]">
                 Lingua Franca
               </h1>
-              <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-cream leading-[1.1]">
+              <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-cream leading-[1.15]">
                 The English Tutorials
               </h2>
             </div>
@@ -46,16 +46,16 @@ export default function Hero() {
 
             {/* Key Value Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 py-2 text-left max-w-xl mx-auto lg:mx-0">
-              <div className="flex items-center gap-2.5 text-xs sm:text-sm text-cream bg-navy-light/80 p-3 rounded-xl border border-cream-300/20">
-                <CheckIcon className="w-4 h-4 shrink-0" />
+              <div className="flex items-center gap-2.5 text-sm sm:text-base text-cream bg-navy-light/80 p-3 rounded-xl border border-cream-300/20">
+                <CheckIcon className="w-4 h-4 shrink-0 text-yellow" />
                 <span className="font-medium">18+ Yrs Excellence</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs sm:text-sm text-cream bg-navy-light/80 p-3 rounded-xl border border-cream-300/20">
-                <CheckIcon className="w-4 h-4 shrink-0" />
+              <div className="flex items-center gap-2.5 text-sm sm:text-base text-cream bg-navy-light/80 p-3 rounded-xl border border-cream-300/20">
+                <CheckIcon className="w-4 h-4 shrink-0 text-yellow" />
                 <span className="font-medium">Online & Offline</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs sm:text-sm text-cream bg-navy-light/80 p-3 rounded-xl border border-cream-300/20">
-                <CheckIcon className="w-4 h-4 shrink-0" />
+              <div className="flex items-center gap-2.5 text-sm sm:text-base text-cream bg-navy-light/80 p-3 rounded-xl border border-cream-300/20">
+                <CheckIcon className="w-4 h-4 shrink-0 text-yellow" />
                 <span className="font-medium">1-on-1 Mentorship</span>
               </div>
             </div>
@@ -92,32 +92,32 @@ export default function Hero() {
                 {[...Array(5)].map((_, i) => (
                   <StarIcon key={i} className="w-4 h-4" />
                 ))}
-                <span className="text-xs font-bold text-navy ml-1.5">5.0 Star Tutoring</span>
+                <span className="text-sm font-semibold text-navy ml-1.5">5.0 Star Tutoring</span>
               </div>
 
               <div className="text-center space-y-1 mb-4">
                 <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy tracking-wider">
                   GLOBAL HORIZONS
                 </h3>
-                <p className="text-xs uppercase tracking-widest text-yellow-dark font-bold">
+                <p className="text-xs sm:text-sm uppercase tracking-widest text-yellow-dark font-bold">
                   Cambridge • ICSE • A Levels
                 </p>
-                <p className="text-xs text-slate-600 pt-2 leading-relaxed">
+                <p className="text-sm text-slate-700 pt-2 leading-relaxed">
                   18+ Years of Academic Excellence with Ms. Ayeshabi Saheb
                 </p>
               </div>
 
               <div className="border-t border-cream-300 pt-4 space-y-2.5">
-                <div className="flex items-center gap-3 bg-cream p-2.5 rounded-xl text-xs font-medium text-navy">
-                  <GraduationCapIcon className="w-5 h-5 shrink-0" />
+                <div className="flex items-center gap-3 bg-cream p-2.5 rounded-xl text-sm font-medium text-navy">
+                  <GraduationCapIcon className="w-5 h-5 shrink-0 text-yellow-dark" />
                   <span>Ms. Ayeshabi Saheb — 18+ Yrs Educator</span>
                 </div>
-                <div className="flex items-center gap-3 bg-cream p-2.5 rounded-xl text-xs font-medium text-navy">
-                  <BookIcon className="w-5 h-5 shrink-0" />
+                <div className="flex items-center gap-3 bg-cream p-2.5 rounded-xl text-sm font-medium text-navy">
+                  <BookIcon className="w-5 h-5 shrink-0 text-yellow-dark" />
                   <span>Vocabulary & FLE Custom Worksheets</span>
                 </div>
-                <div className="flex items-center gap-3 bg-cream p-2.5 rounded-xl text-xs font-medium text-navy">
-                  <MapPinIcon className="w-5 h-5 shrink-0" />
+                <div className="flex items-center gap-3 bg-cream p-2.5 rounded-xl text-sm font-medium text-navy">
+                  <MapPinIcon className="w-5 h-5 shrink-0 text-yellow-dark" />
                   <span>Santacruz West — Online & Offline</span>
                 </div>
               </div>
@@ -125,10 +125,10 @@ export default function Hero() {
               <div className="mt-5 text-center">
                 <Link
                   to="/courses"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-navy hover:text-yellow-dark transition-colors"
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-navy hover:text-yellow-dark transition-colors"
                 >
                   <span>Explore Syllabus</span>
-                  <ArrowRightIcon className="w-3.5 h-3.5" />
+                  <ArrowRightIcon className="w-4 h-4" />
                 </Link>
               </div>
             </div>

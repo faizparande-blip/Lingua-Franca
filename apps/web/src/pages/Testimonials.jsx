@@ -32,7 +32,7 @@ export default function Testimonials() {
         <h3 className="font-serif text-2xl font-bold text-navy">
           Are You a Former or Current Student?
         </h3>
-        <p className="text-slate-600 text-sm">
+        <p className="text-slate-700 text-base sm:text-lg">
           We would love to feature your academic journey and feedback on our official showcase.
         </p>
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -40,12 +40,12 @@ export default function Testimonials() {
             href="https://wa.me/919167217749?text=Hello%20Ms.%20Ayeshabi%2C%20I%20would%20like%20to%20submit%20my%20testimonial."
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-navy text-xs sm:text-sm py-2.5 px-5 inline-flex items-center gap-2"
+            className="btn-navy text-sm sm:text-base py-3 px-6 inline-flex items-center gap-2"
           >
             <MessageIcon className="w-4 h-4" />
             <span>Share Feedback via WhatsApp</span>
           </a>
-          <Link to="/contact" className="btn-yellow text-xs sm:text-sm py-2.5 px-5 font-bold">
+          <Link to="/contact" className="btn-yellow text-sm sm:text-base py-3 px-6 font-bold">
             Book a Free Demo
           </Link>
         </div>

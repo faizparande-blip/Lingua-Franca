@@ -13,12 +13,12 @@ export default function Button({
   icon: Icon = null,
   ...props
 }) {
-  const baseStyles = 'inline-flex items-center justify-center font-bold rounded-xl transition-all duration-200 focus:outline-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.97]';
+  const baseStyles = 'inline-flex items-center justify-center font-bold rounded-xl transition-all duration-200 focus:outline-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.98]';
 
   const sizeStyles = {
-    sm: 'px-3.5 py-1.5 text-xs',
-    md: 'px-5 py-2.5 text-sm',
-    lg: 'px-7 py-3.5 text-base',
+    sm: 'px-3.5 py-1.5 text-xs sm:text-sm',
+    md: 'px-5 py-2.5 text-sm sm:text-base',
+    lg: 'px-7 py-3.5 text-base sm:text-lg',
   };
 
   const variantStyles = {

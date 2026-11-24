@@ -55,12 +55,12 @@ export default function TestimonialsComponent() {
           <h3 className="font-serif text-xl font-bold text-red-700">
             Unable to Load Reviews
           </h3>
-          <p className="text-slate-600 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
+          <p className="text-slate-700 text-sm sm:text-base max-w-md mx-auto leading-relaxed">
             {error}
           </p>
           <button
             onClick={loadTestimonials}
-            className="btn-outline text-xs px-4 py-2 font-bold cursor-pointer mt-2"
+            className="btn-outline text-sm px-5 py-2 font-bold cursor-pointer mt-2"
           >
             Retry
           </button>
@@ -70,10 +70,10 @@ export default function TestimonialsComponent() {
           <div className="w-12 h-12 mx-auto rounded-full bg-cream border border-yellow flex items-center justify-center text-navy mb-2">
             <StarIcon className="w-6 h-6" />
           </div>
-          <h3 className="font-serif text-xl font-bold text-navy">
+          <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy">
             No Verified Reviews Yet
           </h3>
-          <p className="text-slate-600 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
+          <p className="text-slate-700 text-sm sm:text-base max-w-md mx-auto leading-relaxed">
             We are currently curating and verifying authentic feedback from our students. Are you an alumnus? We would love to feature your academic journey!
           </p>
         </div>
@@ -92,12 +92,12 @@ export default function TestimonialsComponent() {
                     {[...Array(Math.min(Math.max(item.rating || 5, 1), 5))].map((_, i) => (
                       <StarIcon key={i} className="w-4 h-4" />
                     ))}
-                    <span className="text-[10px] tracking-wider uppercase text-navy font-bold ml-2 px-2 py-0.5 rounded bg-cream border border-cream-300">
+                    <span className="text-[11px] tracking-wider uppercase text-navy font-bold ml-2 px-2.5 py-0.5 rounded bg-cream border border-cream-300">
                       Verified Student
                     </span>
                   </div>
 
-                  <p className="font-serif italic text-slate-800 text-sm sm:text-base leading-relaxed mb-6">
+                  <p className="font-serif italic text-slate-800 text-base sm:text-lg leading-relaxed mb-6">
                     "{item.text}"
                   </p>
                 </div>
@@ -107,8 +107,8 @@ export default function TestimonialsComponent() {
                     {item.avatar || (item.name ? item.name.charAt(0).toUpperCase() : 'S')}
                   </div>
                   <div>
-                    <h4 className="font-serif text-sm font-bold text-navy">{item.name}</h4>
-                    <p className="text-xs text-slate-500 font-medium">{item.course}</p>
+                    <h4 className="font-serif text-base font-bold text-navy">{item.name}</h4>
+                    <p className="text-sm text-slate-600 font-medium">{item.course}</p>
                   </div>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function TestimonialsComponent() {
               >
                 <ChevronLeftIcon className="w-5 h-5" />
               </button>
-              <span className="text-xs font-semibold text-slate-500">
+              <span className="text-sm font-medium text-slate-600">
                 Viewing {total} verified student experiences
               </span>
               <button

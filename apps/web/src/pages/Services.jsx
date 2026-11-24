@@ -103,10 +103,10 @@ export default function Services() {
                   <div className="w-12 h-12 rounded-xl bg-cream border border-yellow flex items-center justify-center text-navy mb-5 transition-transform duration-300 group-hover:scale-105">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-navy mb-2.5 group-hover:text-yellow-dark transition-colors">
+                  <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-2.5 group-hover:text-yellow-dark transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -126,7 +126,7 @@ export default function Services() {
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream mt-2">
               Online & Offline Instruction Modes
             </h2>
-            <p className="text-cream/80 text-sm mt-2">
+            <p className="text-cream/90 text-base sm:text-lg mt-2 leading-relaxed">
               Choose the learning environment that best accommodates your child's schedule and geographical location.
             </p>
           </div>
@@ -145,21 +145,21 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="space-y-3 text-cream/80 text-sm">
+              <div className="space-y-3 text-cream/90 text-sm sm:text-base">
                 <div className="flex items-start gap-2.5">
-                  <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" />
+                  <CheckIcon className="w-4 h-4 shrink-0 mt-1 text-yellow" />
                   <span className="text-cream font-medium">Small-group online classes with personalised attention for every student.</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" />
+                  <CheckIcon className="w-4 h-4 shrink-0 mt-1 text-yellow" />
                   <span>Real-time digital whiteboard and live interactive markup of student compositions.</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" />
+                  <CheckIcon className="w-4 h-4 shrink-0 mt-1 text-yellow" />
                   <span>Cloud repository for instantaneous sharing of past papers, rubrics, and notes.</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" />
+                  <CheckIcon className="w-4 h-4 shrink-0 mt-1 text-yellow" />
                   <span>High flexibility for students balancing school obligations and extracurriculars.</span>
                 </div>
               </div>
@@ -177,17 +177,17 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="space-y-3 text-cream/80 text-sm">
+              <div className="space-y-3 text-cream/90 text-sm sm:text-base">
                 <div className="flex items-start gap-2.5">
-                  <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" />
+                  <CheckIcon className="w-4 h-4 shrink-0 mt-1 text-yellow" />
                   <span>Intimate physical learning environment with focused personal attention from Ms. Ayeshabi.</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" />
+                  <CheckIcon className="w-4 h-4 shrink-0 mt-1 text-yellow" />
                   <span>Handwritten exam practice simulations replicating genuine board examination conditions.</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" />
+                  <CheckIcon className="w-4 h-4 shrink-0 mt-1 text-yellow" />
                   <span>Convenient location: B/16, 2nd Floor, Anu Apartment, Milan Subway Road, Santacruz West.</span>
                 </div>
               </div>
@@ -231,7 +231,7 @@ export default function Services() {
                   />
                 </button>
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-slate-600 text-sm leading-relaxed border-t border-cream-300">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 text-slate-700 text-sm sm:text-base leading-relaxed border-t border-cream-300">
                     {faq.a}
                   </div>
                 )}
@@ -244,7 +244,7 @@ export default function Services() {
         <div className="mt-14 text-center">
           <Link
             to="/contact"
-            className="btn-yellow inline-flex items-center gap-2 px-8 py-3.5 text-sm font-bold shadow-md"
+            className="btn-yellow inline-flex items-center gap-2 px-8 py-3.5 text-sm sm:text-base font-bold shadow-md"
           >
             <span>Have More Questions? Book a Demo Session</span>
             <ArrowRightIcon className="w-4 h-4" />

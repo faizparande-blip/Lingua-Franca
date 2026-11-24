@@ -1,33 +1,116 @@
-const CACHE_NAME = 'lingua-franca-v1';
-const SHELL = ['/', '/index.html', '/favicon.svg', '/icons.svg'];
+const CACHE_VERSION = 'lingua-franca-v3';
+const STATIC_CACHE = `${CACHE_VERSION}-static`;
 
-self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
-});
+const PRECACHE_ASSETS = [
+  '/',
+  '/index.html',
+  '/manifest.json',
+  '/favicon.svg',
+  '/icons.svg',
+  '/pwa-192x192.png',
+  '/pwa-512x512.png',
+  '/pwa-maskable-192x192.png',
+  '/pwa-maskable-512x512.png',
+  '/apple-touch-icon.png'
+];
 
-self.addEventListener('activate', e => {
-  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))).then(() => self.clients.claim()));
-});
-
-self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET') return;
-  e.respondWith(
-    caches.match(e.request).then(r => r || fetch(e.request).then(res => {
-      if (res.status === 200 && res.type === 'basic') {
-        const clone = res.clone();
-        caches.open(CACHE_NAME).then(c => c.put(e.request, clone));
-      }
-      return res;
-    }).catch(() => caches.match('/index.html')))
+// Install: precache the core application shell
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches
+      .open(STATIC_CACHE)
+      .then((cache) => cache.addAll(PRECACHE_ASSETS))
+      .then(() => self.skipWaiting())
   );
 });
 
-self.addEventListener('push', e => {
-  const data = e.data ? e.data.json() : { title: 'Lingua Franca', body: 'New update available!' };
-  e.waitUntil(self.registration.showNotification(data.title, { body: data.body, icon: '/favicon.svg', badge: '/favicon.svg' }));
+// Activate: clean up older cache versions
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches
+      .keys()
+      .then((keys) =>
+        Promise.all(
+          keys
+            .filter((key) => key !== STATIC_CACHE)
+            .map((key) => caches.delete(key))
+        )
+      )
+      .then(() => self.clients.claim())
+  );
 });
 
-self.addEventListener('notificationclick', e => {
-  e.notification.close();
-  e.waitUntil(clients.openWindow('/'));
+// Fetch: Network-first for navigation/HTML, Stale-while-revalidate for static assets
+self.addEventListener('fetch', (event) => {
+  const request = event.request;
+
+  // Only handle GET requests
+  if (request.method !== 'GET') return;
+
+  const url = new URL(request.url);
+
+  // Bypass external APIs like Supabase and non-http(s)
+  if (url.origin !== self.location.origin) {
+    return;
+  }
+
+  // 1. Navigation requests (HTML pages): Network-first with offline fallback
+  if (request.mode === 'navigate') {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(STATIC_CACHE).then((cache) => cache.put(request, clone));
+          }
+          return response;
+        })
+        .catch(() => {
+          return caches.match('/index.html') || caches.match('/');
+        })
+    );
+    return;
+  }
+
+  // 2. Static same-origin assets (JS, CSS, images, icons): Cache-first with network fallback
+  event.respondWith(
+    caches.match(request).then((cachedResponse) => {
+      if (cachedResponse) {
+        // Fetch in background to update cache (stale-while-revalidate)
+        fetch(request)
+          .then((networkResponse) => {
+            if (networkResponse && networkResponse.status === 200) {
+              caches.open(STATIC_CACHE).then((cache) => cache.put(request, networkResponse));
+            }
+          })
+          .catch(() => {});
+        return cachedResponse;
+      }
+
+      return fetch(request).then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+          const clone = networkResponse.clone();
+          caches.open(STATIC_CACHE).then((cache) => cache.put(request, clone));
+        }
+        return networkResponse;
+      });
+    })
+  );
+});
+
+// Push notification support (preserved)
+self.addEventListener('push', (event) => {
+  const data = event.data ? event.data.json() : { title: 'Lingua Franca', body: 'New update available!' };
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: '/pwa-192x192.png',
+      badge: '/pwa-192x192.png'
+    })
+  );
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  event.waitUntil(self.clients.openWindow('/'));
 });

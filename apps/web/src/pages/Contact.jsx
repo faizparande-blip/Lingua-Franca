@@ -34,10 +34,10 @@ export default function Contact() {
               <h2 className="font-serif text-3xl font-bold text-navy">
                 Ms. Ayeshabi Saheb
               </h2>
-              <p className="text-slate-600 font-semibold text-sm">
+              <p className="text-slate-600 font-semibold text-sm sm:text-base">
                 Founder & Lead Educator • 18+ Years Experience
               </p>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-700 text-base leading-relaxed">
                 Whether you need immediate curriculum advice, have queries about upcoming board cycles, or wish to discuss customised sessions for your child, we are readily available.
               </p>
             </div>
@@ -46,14 +46,14 @@ export default function Contact() {
               {/* Phone Numbers */}
               <div className="bg-white p-5 rounded-2xl border-2 border-cream-300 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-cream flex items-center justify-center shrink-0 border border-yellow">
-                  <PhoneIcon className="w-5 h-5" />
+                  <PhoneIcon className="w-5 h-5 text-navy" />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="font-serif text-base font-bold text-navy">Direct Calling Numbers</h4>
-                  <p className="text-xs text-slate-500">Mon – Sat, 9:00 AM – 8:00 PM IST</p>
-                  <div className="pt-1 flex flex-col text-sm font-semibold">
+                  <h4 className="font-serif text-base sm:text-lg font-bold text-navy">Direct Calling Numbers</h4>
+                  <p className="text-xs sm:text-sm text-slate-500">Mon – Sat, 9:00 AM – 8:00 PM IST</p>
+                  <div className="pt-1 flex flex-col text-sm sm:text-base font-semibold">
                     <a href="tel:+919167217749" className="text-navy hover:text-navy-light">+91 91672 17749 (Primary)</a>
-                    <a href="tel:+919833468057" className="text-slate-600 hover:text-navy text-xs font-normal">+91 98334 68057 (Alternate)</a>
+                    <a href="tel:+919833468057" className="text-slate-700 hover:text-navy text-sm font-medium pt-0.5">+91 98334 68057 (Alternate)</a>
                   </div>
                 </div>
               </div>
@@ -61,15 +61,15 @@ export default function Contact() {
               {/* WhatsApp */}
               <div className="bg-white p-5 rounded-2xl border-2 border-cream-300 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-cream flex items-center justify-center shrink-0 border border-yellow">
-                  <MessageIcon className="w-5 h-5" />
+                  <MessageIcon className="w-5 h-5 text-navy" />
                 </div>
                 <div className="space-y-2">
-                  <h4 className="font-serif text-base font-bold text-navy">Instant WhatsApp Enquiry</h4>
+                  <h4 className="font-serif text-base sm:text-lg font-bold text-navy">Instant WhatsApp Enquiry</h4>
                   <a
                     href="https://wa.me/919167217749?text=Hello%20Ms.%20Ayeshabi%2C%20I%20would%20like%20to%20enquire%20about%20English%20Tutorials."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-yellow text-xs py-2 px-4 inline-flex items-center gap-2 font-bold"
+                    className="btn-yellow text-sm py-2.5 px-4 inline-flex items-center gap-2 font-bold"
                   >
                     <span>Start WhatsApp Chat (+91 91672 17749)</span>
                   </a>
@@ -79,11 +79,11 @@ export default function Contact() {
               {/* Address */}
               <div className="bg-white p-5 rounded-2xl border-2 border-cream-300 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-cream flex items-center justify-center shrink-0 border border-yellow">
-                  <MapPinIcon className="w-5 h-5" />
+                  <MapPinIcon className="w-5 h-5 text-navy" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-base font-bold text-navy">Classroom Centre</h4>
-                  <address className="not-italic text-sm text-slate-700 leading-relaxed pt-1">
+                  <h4 className="font-serif text-base sm:text-lg font-bold text-navy">Classroom Centre</h4>
+                  <address className="not-italic text-sm sm:text-base text-slate-700 leading-relaxed pt-1">
                     B/16, 2nd Floor, Anu Apartment,<br />
                     Milan Subway Road, Santacruz West,<br />
                     Mumbai - 400054, Maharashtra, India.
@@ -108,13 +108,13 @@ export default function Contact() {
             <div>
               <span className="text-xs uppercase font-bold tracking-widest text-navy/60">Visit In Person</span>
               <h3 className="font-serif text-2xl font-bold text-navy mt-0.5">Santacruz West Classroom Centre</h3>
-              <p className="text-xs text-slate-600 mt-0.5">B/16, 2nd Floor, Anu Apartment, Milan Subway Road, Santacruz West, Mumbai - 400054</p>
+              <p className="text-sm text-slate-700 mt-0.5">B/16, 2nd Floor, Anu Apartment, Milan Subway Road, Santacruz West, Mumbai - 400054</p>
             </div>
             <a
               href="https://maps.google.com/?q=Milan+Subway+Road,+Santacruz+West,+Mumbai+400054"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline text-xs py-2 px-4 font-bold inline-flex items-center gap-1.5 self-start sm:self-auto"
+              className="btn-outline text-sm py-2.5 px-4 font-bold inline-flex items-center gap-1.5 self-start sm:self-auto"
             >
               <span>Open in Google Maps</span>
               <span>↗</span>
