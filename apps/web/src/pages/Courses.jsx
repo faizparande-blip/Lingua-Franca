@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../hooks/useSEO';
 import { courses } from '../data/courses';
 import CourseCard from '../components/courses/CourseCard';
 import DemoForm from '../components/forms/DemoForm';
@@ -10,6 +11,12 @@ import {
 } from '../components/common/Icons';
 
 export default function Courses() {
+  useSEO({
+    title: 'Courses | Lingua Franca Classes',
+    description: 'Explore comprehensive English courses at Lingua Franca Classes, covering Cambridge Checkpoint, IGCSE English, A Levels, and ICSE curricula with Ms. Ayeshabi Saheb.',
+    canonicalPath: '/courses',
+  });
+
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [showDemoModal, setShowDemoModal] = useState(false);
 

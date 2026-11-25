@@ -1,4 +1,5 @@
 import React from 'react';
+import useSEO from '../hooks/useSEO';
 import Hero from '../components/home/Hero';
 import Stats from '../components/home/Stats';
 import CoursesPreview from '../components/home/CoursesPreview';
@@ -15,6 +16,12 @@ import {
 } from '../components/common/Icons';
 
 export default function Home() {
+  useSEO({
+    title: 'Lingua Franca Classes | English Language & Communication Training',
+    description: 'Lingua Franca Classes – Premium English language education and communication training by Ms. Ayeshabi Saheb. Cambridge Checkpoints, IGCSE, A Levels, and ICSE coaching in Mumbai and online.',
+    canonicalPath: '/',
+  });
+
   return (
     <div className="bg-cream">
       <Hero />

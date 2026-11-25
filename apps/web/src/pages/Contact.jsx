@@ -1,8 +1,15 @@
 ﻿import React from 'react';
+import useSEO from '../hooks/useSEO';
 import DemoForm from '../components/forms/DemoForm';
 import { PhoneIcon, MapPinIcon, MessageIcon } from '../components/common/Icons';
 
 export default function Contact() {
+  useSEO({
+    title: 'Contact Us | Lingua Franca Classes',
+    description: 'Contact Lingua Franca Classes or book a free trial demo with Ms. Ayeshabi Saheb. Reach us via phone, WhatsApp, or at our Santacruz West classroom centre in Mumbai.',
+    canonicalPath: '/contact',
+  });
+
   return (
     <div className="bg-cream pb-24">
 

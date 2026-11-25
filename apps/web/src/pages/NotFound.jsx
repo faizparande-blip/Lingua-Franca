@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 import { CompassIcon, ArrowRightIcon } from '../components/common/Icons';
 
 export default function NotFound() {
+  useSEO({
+    title: 'Page Not Found | Lingua Franca Classes',
+    description: 'The requested page could not be found on Lingua Franca Classes.',
+    canonicalPath: '/404',
+  });
+
   return (
     <div className="min-h-[75vh] flex items-center justify-center bg-cream px-4">
       <div className="text-center space-y-6 max-w-lg mx-auto">

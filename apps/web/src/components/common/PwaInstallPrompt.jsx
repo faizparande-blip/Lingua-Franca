@@ -122,7 +122,7 @@ export default function PwaInstallPrompt() {
           </div>
           <div className="min-w-0">
             <h4 className="text-xs sm:text-sm font-bold text-navy leading-tight truncate">
-              {isDesktop ? 'Install Lingua Franca Desktop App' : 'Install Lingua Franca App'}
+              {isDesktop ? 'Install Lingua Franca Classes App' : 'Install Lingua Franca Classes App'}
             </h4>
             <p className="text-[11px] sm:text-xs text-slate-600 leading-tight mt-0.5 truncate">
               {isDesktop
@@ -175,7 +175,7 @@ export default function PwaInstallPrompt() {
                       <strong>Google Chrome / Microsoft Edge:</strong> Look for the <strong>Install icon</strong> (🖥️ or ⊕) in the right side of the address bar, and click <strong>Install</strong>.
                     </li>
                     <li>
-                      Alternatively, click the browser menu (<strong>⋮</strong> or <strong>…</strong>) at top-right and select <strong>"Install Lingua Franca..."</strong>.
+                      Alternatively, click the browser menu (<strong>⋮</strong> or <strong>…</strong>) at top-right and select <strong>"Install Lingua Franca Classes..."</strong>.
                     </li>
                   </ul>
                   <p className="text-xs text-slate-500 pt-1">

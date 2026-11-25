@@ -117,7 +117,7 @@ export default function Footer() {
 
               <div className="pt-2">
                 <a
-                  href="https://wa.me/919167217749?text=Hello%20Ms.%20Ayeshabi%2C%20I%20would%20like%20to%20enquire%20about%20English%20Tutorials%20at%20Lingua%20Franca."
+                  href="https://wa.me/919167217749?text=Hello%20Ms.%20Ayeshabi%2C%20I%20would%20like%20to%20enquire%20about%20English%20Tutorials%20at%20Lingua%20Franca%20Classes."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-yellow text-navy px-4 py-2.5 inline-flex items-center gap-2 text-sm font-bold shadow-sm"
@@ -132,7 +132,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-cream-300/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-cream/75">
-          <p>© {new Date().getFullYear()} Lingua Franca – The English Tutorials. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Lingua Franca Classes. All rights reserved.</p>
           <div className="flex items-center gap-4 sm:gap-6">
             <span className="text-yellow">Online & Offline Sessions Available</span>
             <span>•</span>

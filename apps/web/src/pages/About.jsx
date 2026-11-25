@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 import { 
   AwardIcon, 
   CompassIcon, 
@@ -13,6 +14,12 @@ import {
 } from '../components/common/Icons';
 
 export default function About() {
+  useSEO({
+    title: 'About Us | Lingua Franca Classes',
+    description: 'Learn about Lingua Franca Classes and Ms. Ayeshabi Saheb. Over 18 years of teaching excellence across Cambridge Checkpoints, IGCSE, A Levels, and ICSE English.',
+    canonicalPath: '/about',
+  });
+
   return (
     <div className="bg-cream pb-20">
       

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../hooks/useSEO';
 import { services } from '../data/services';
 import { Link } from 'react-router-dom';
 import { 
@@ -56,6 +57,12 @@ const FAQS = [
 ];
 
 export default function Services() {
+  useSEO({
+    title: 'Our Services | Lingua Franca Classes',
+    description: 'Comprehensive English language training services, exam preparation camps, past paper drills, and personalized academic mentoring at Lingua Franca Classes.',
+    canonicalPath: '/services',
+  });
+
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {

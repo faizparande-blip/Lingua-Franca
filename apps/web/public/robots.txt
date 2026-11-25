@@ -1,0 +1,5 @@
+# robots.txt for Lingua Franca Classes
+User-agent: *
+Allow: /
+
+Sitemap: https://linguafranca.linkal.in/sitemap.xml

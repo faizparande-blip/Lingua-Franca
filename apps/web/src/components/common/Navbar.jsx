@@ -97,7 +97,7 @@ export default function Navbar() {
               to="/"
               onClick={closeMenu}
               className="group flex items-center gap-2 sm:gap-3 shrink-0 min-w-0"
-              aria-label="Lingua Franca Homepage"
+              aria-label="Lingua Franca Classes Homepage"
             >
               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-cream flex items-center justify-center border border-yellow shadow-sm transition-transform duration-300 group-hover:scale-105 shrink-0">
                 <BookIcon className="w-4 h-4 sm:w-5 sm:h-5 text-navy" />
