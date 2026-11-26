@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet, useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
+import { PUBLIC_WEBSITE_URL } from '../config/env.js';
 import { 
   LayoutDashboard, 
   Users, 
@@ -17,7 +18,7 @@ export default function AdminLayout() {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const publicWebsiteUrl = import.meta.env.VITE_PUBLIC_WEBSITE_URL || 'https://linguafranca.linkal.in';
+  const publicWebsiteUrl = PUBLIC_WEBSITE_URL;
 
   const navItems = [
     { name: 'Dashboard', path: '/', icon: LayoutDashboard, exact: true },

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext.jsx';
+import { PUBLIC_WEBSITE_URL } from '../../config/env.js';
 import { Lock, Mail, Eye, EyeOff, ShieldCheck, AlertCircle, ExternalLink } from 'lucide-react';
 
 export default function AdminLogin() {
@@ -14,7 +15,7 @@ export default function AdminLogin() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const publicWebsiteUrl = import.meta.env.VITE_PUBLIC_WEBSITE_URL || 'https://linguafranca.linkal.in';
+  const publicWebsiteUrl = PUBLIC_WEBSITE_URL;
 
   // Destination route after login
   const from = location.state?.from?.pathname || '/';

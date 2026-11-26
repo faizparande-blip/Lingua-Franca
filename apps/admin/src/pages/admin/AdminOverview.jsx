@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getDashboardStats } from '../../services/adminService.js';
+import { PUBLIC_WEBSITE_URL } from '../../config/env.js';
 import { 
   Users, 
   Clock, 
@@ -415,7 +416,7 @@ export default function AdminOverview() {
 
             <div className="pt-3 border-t border-cream-300/80">
               <a
-                href="/"
+                href={PUBLIC_WEBSITE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-2.5 px-3 rounded-xl bg-navy text-cream text-xs font-bold flex items-center justify-center gap-2 hover:bg-navy-light transition-colors shadow-sm"

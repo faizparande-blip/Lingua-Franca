@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PUBLIC_WEBSITE_URL } from '../config/env.js';
 import { CompassIcon, ArrowRightIcon } from '../components/common/Icons';
+import { ExternalLink } from 'lucide-react';
 
 export default function NotFound() {
   return (
@@ -27,15 +29,17 @@ export default function NotFound() {
             to="/"
             className="btn-yellow w-full sm:w-auto px-7 py-3 text-sm font-bold shadow-sm flex items-center justify-center gap-2"
           >
-            <span>Return to Home</span>
+            <span>Return to Dashboard</span>
           </Link>
-          <Link
-            to="/courses"
+          <a
+            href={PUBLIC_WEBSITE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-outline w-full sm:w-auto px-7 py-3 text-sm font-bold flex items-center justify-center gap-2"
           >
-            <span>Explore Courses</span>
-            <ArrowRightIcon className="w-4 h-4" />
-          </Link>
+            <span>Visit Live Website</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext.jsx';
+import { PUBLIC_WEBSITE_URL } from '../../config/env.js';
 import Loader from '../common/Loader.jsx';
 import { AlertIcon } from '../common/Icons.jsx';
 
@@ -55,7 +56,9 @@ export default function AdminProtectedRoute() {
               Sign Out & Switch Account
             </button>
             <a
-              href={import.meta.env.VITE_PUBLIC_WEBSITE_URL || 'https://linguafranca.linkal.in'}
+              href={PUBLIC_WEBSITE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-outline w-full py-2.5 text-xs font-semibold"
             >
               Back to Main Website
