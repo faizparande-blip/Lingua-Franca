@@ -58,8 +58,8 @@ const FAQS = [
 
 export default function Services() {
   useSEO({
-    title: 'Our Services | Lingua Franca Classes',
-    description: 'Comprehensive English language training services, exam preparation camps, past paper drills, and personalized academic mentoring at Lingua Franca Classes.',
+    title: 'Our Services | Lingua Franca Mumbai',
+    description: 'Explore specialized language learning and English speaking services in Mumbai with Lingua Franca Mumbai: past paper drills, speech poise, composition analysis, and 1-on-1 mentorship.',
     canonicalPath: '/services',
   });
 

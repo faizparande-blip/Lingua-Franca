@@ -97,7 +97,7 @@ export default function Navbar() {
               to="/"
               onClick={closeMenu}
               className="group flex items-center gap-2 sm:gap-3 shrink-0 min-w-0"
-              aria-label="Lingua Franca Classes Homepage"
+              aria-label="Lingua Franca Mumbai Homepage"
             >
               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-cream flex items-center justify-center border border-yellow shadow-sm transition-transform duration-300 group-hover:scale-105 shrink-0">
                 <BookIcon className="w-4 h-4 sm:w-5 sm:h-5 text-navy" />
@@ -107,7 +107,7 @@ export default function Navbar() {
                   LINGUA FRANCA
                 </span>
                 <span className="text-[8px] sm:text-[10px] xl:text-xs tracking-[0.12em] sm:tracking-[0.2em] uppercase text-yellow font-sans font-semibold hidden min-[360px]:block">
-                  The English Tutorials
+                  Mumbai
                 </span>
               </div>
             </Link>
@@ -201,7 +201,7 @@ export default function Navbar() {
               <span className="text-xs uppercase font-bold tracking-widest text-yellow">
                 Menu & Navigation
               </span>
-              <span className="text-xs text-cream/70 font-medium">Lingua Franca</span>
+              <span className="text-xs text-cream/70 font-medium">Lingua Franca Mumbai</span>
             </div>
 
             <nav className="grid grid-cols-1 sm:grid-cols-2 gap-2" aria-label="Mobile links">

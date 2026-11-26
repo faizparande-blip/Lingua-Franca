@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 const BASE_URL = 'https://linguafranca.linkal.in';
-const DEFAULT_TITLE = 'Lingua Franca Classes';
+const DEFAULT_TITLE = 'Lingua Franca Mumbai | Language Learning & English Speaking';
 const DEFAULT_DESCRIPTION =
-  'Lingua Franca Classes – Premium English language education and communication training by Ms. Ayeshabi Saheb. Cambridge Checkpoints, IGCSE, A Levels, and ICSE coaching in Mumbai and online.';
+  'Explore language learning and English speaking courses with Lingua Franca Mumbai. Discover available courses, services and learning opportunities.';
 
 function setMetaTag(selector, attribute, value) {
   let element = document.querySelector(selector);
@@ -47,7 +47,7 @@ export function useSEO({ title, description = DEFAULT_DESCRIPTION, canonicalPath
     setMetaTag('meta[property="og:description"]', 'content', description);
     const fullCanonicalUrl = `${BASE_URL}${canonicalPath === '/' ? '/' : canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
     setMetaTag('meta[property="og:url"]', 'content', fullCanonicalUrl);
-    setMetaTag('meta[property="og:site_name"]', 'content', 'Lingua Franca Classes');
+    setMetaTag('meta[property="og:site_name"]', 'content', 'Lingua Franca Mumbai');
 
     // 4. Twitter Card Tags
     setMetaTag('meta[name="twitter:title"]', 'content', finalTitle);

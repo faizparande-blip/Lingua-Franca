@@ -28,7 +28,7 @@ export function buildWhatsAppLink(message, phone = DEFAULT_PHONE) {
 export function formatDemoWhatsAppMessage(data) {
   const notesText = data.notes && data.notes.trim() ? data.notes.trim() : 'None';
   return (
-    `*NEW DEMO ENQUIRY – LINGUA FRANCA CLASSES*\n\n` +
+    `*NEW DEMO ENQUIRY – LINGUA FRANCA MUMBAI*\n\n` +
     `Name: ${data.fullName || ''}\n` +
     `Email: ${data.email || ''}\n` +
     `Phone: ${data.phone || ''}\n` +
@@ -54,7 +54,7 @@ export function formatDemoWhatsAppMessage(data) {
 export function formatContactWhatsAppMessage(data) {
   const phoneText = data.phone && data.phone.trim() ? data.phone.trim() : 'Not provided';
   return (
-    `*NEW CONTACT ENQUIRY – LINGUA FRANCA CLASSES*\n\n` +
+    `*NEW CONTACT ENQUIRY – LINGUA FRANCA MUMBAI*\n\n` +
     `Name: ${data.fullName || ''}\n` +
     `Email: ${data.email || ''}\n` +
     `Phone: ${phoneText}\n\n` +
@@ -70,7 +70,7 @@ export function openWhatsApp(message, phone = DEFAULT_PHONE) {
 }
 
 export const WHATSAPP_MESSAGES = {
-  GENERAL_ENQUIRY: "Hello! I'd like to enquire about English tutoring at Lingua Franca Classes.",
-  BOOK_DEMO: "Hello! I'd like to book a free demo class at Lingua Franca Classes.",
-  COURSE_ENQUIRY: (courseName) => `Hello! I'd like to know more about the ${courseName} course at Lingua Franca Classes.`,
+  GENERAL_ENQUIRY: "Hello! I'd like to enquire about language learning and English tutoring at Lingua Franca Mumbai.",
+  BOOK_DEMO: "Hello! I'd like to book a free demo class at Lingua Franca Mumbai.",
+  COURSE_ENQUIRY: (courseName) => `Hello! I'd like to know more about the ${courseName} course at Lingua Franca Mumbai.`,
 };

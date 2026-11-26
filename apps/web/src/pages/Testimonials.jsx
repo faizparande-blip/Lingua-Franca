@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 export default function Testimonials() {
   useSEO({
-    title: 'Student Testimonials | Lingua Franca Classes',
-    description: 'Read inspiring reviews, success stories, and verified testimonials from students and parents at Lingua Franca Classes.',
+    title: 'Student Testimonials | Lingua Franca Mumbai',
+    description: 'Read inspiring reviews, success stories, and verified testimonials from language learning and English speaking students at Lingua Franca Mumbai.',
     canonicalPath: '/testimonials',
   });
 

@@ -5,8 +5,8 @@ import { PhoneIcon, MapPinIcon, MessageIcon } from '../components/common/Icons';
 
 export default function Contact() {
   useSEO({
-    title: 'Contact Us | Lingua Franca Classes',
-    description: 'Contact Lingua Franca Classes or book a free trial demo with Ms. Ayeshabi Saheb. Reach us via phone, WhatsApp, or at our Santacruz West classroom centre in Mumbai.',
+    title: 'Contact Us | Lingua Franca Mumbai',
+    description: 'Contact Lingua Franca Mumbai or book a free trial demo with Ms. Ayeshabi Saheb. Reach us via phone, WhatsApp, or at our Santacruz West classroom centre in Mumbai.',
     canonicalPath: '/contact',
   });
 
@@ -20,7 +20,7 @@ export default function Contact() {
             Get In Touch
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-yellow mt-3 mb-2">
-            Contact Lingua Franca
+            Contact Lingua Franca Mumbai
           </h1>
           <p className="font-serif italic text-lg sm:text-xl text-cream/90 max-w-2xl mx-auto">
             "Connect directly with Ms. Ayeshabi Saheb to schedule a consultation or trial demo."

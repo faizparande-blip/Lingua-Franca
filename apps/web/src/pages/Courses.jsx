@@ -12,8 +12,8 @@ import {
 
 export default function Courses() {
   useSEO({
-    title: 'Courses | Lingua Franca Classes',
-    description: 'Explore comprehensive English courses at Lingua Franca Classes, covering Cambridge Checkpoint, IGCSE English, A Levels, and ICSE curricula with Ms. Ayeshabi Saheb.',
+    title: 'Courses | Lingua Franca Mumbai',
+    description: 'Discover English speaking and language learning courses in Mumbai with Lingua Franca Mumbai. Comprehensive training across Cambridge Checkpoints, IGCSE, A Levels, and ICSE.',
     canonicalPath: '/courses',
   });
 
@@ -35,10 +35,10 @@ export default function Courses() {
       <section className="relative py-20 bg-navy text-cream border-b-4 border-yellow text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-yellow bg-white/10 px-3 py-1 rounded-full">
-            Comprehensive Curricula
+            Language Learning in Mumbai
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-yellow mt-3 mb-4">
-            Our English Courses
+            Language & English Courses in Mumbai
           </h1>
           <p className="font-serif italic text-lg sm:text-xl text-cream/90 max-w-2xl mx-auto">
             "Targeted syllabus training from Cambridge Checkpoint through A Levels & ICSE."

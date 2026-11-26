@@ -21,16 +21,16 @@ export default function Hero() {
             {/* Tagline Pill */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cream/10 border border-yellow/40 text-yellow text-xs sm:text-sm font-semibold tracking-wider uppercase">
               <span className="w-2 h-2 rounded-full bg-yellow inline-block animate-pulse" />
-              <span>Premium English Tutorials • Mumbai & Global Online</span>
+              <span>Language Learning & English Speaking • Mumbai</span>
             </div>
 
             {/* Main Headings */}
             <div className="space-y-1 sm:space-y-2">
               <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-yellow leading-[1.1]">
-                Lingua Franca
+                Lingua Franca Mumbai
               </h1>
               <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-cream leading-[1.15]">
-                The English Tutorials
+                Language Learning & English Speaking
               </h2>
             </div>
 
@@ -41,7 +41,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-cream/80 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-sans">
-              Master the global language with bespoke, results-driven English tutorials by Ms. Ayeshabi Saheb. Specialising in Cambridge Checkpoint, IGCSE FLE & ESL, A Levels, and ICSE with over 18 years of academic distinction.
+              Explore language learning and English speaking courses with Lingua Franca Mumbai led by Ms. Ayeshabi Saheb. Specialising in Cambridge Checkpoint, IGCSE FLE & ESL, A Levels, and ICSE with over 18 years of academic distinction.
             </p>
 
             {/* Key Value Highlights */}

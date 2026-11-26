@@ -20,7 +20,7 @@ export default function NotFound() {
             Page Not Found
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            The destination you are navigating to does not exist or has been relocated within the Lingua Franca portal.
+            The destination you are navigating to does not exist or has been relocated within the Lingua Franca Mumbai portal.
           </p>
         </div>
 

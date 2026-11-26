@@ -1,4 +1,4 @@
-# robots.txt for Lingua Franca Classes
+# robots.txt for Lingua Franca Mumbai
 User-agent: *
 Allow: /
 

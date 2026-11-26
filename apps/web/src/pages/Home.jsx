@@ -17,8 +17,8 @@ import {
 
 export default function Home() {
   useSEO({
-    title: 'Lingua Franca Classes | English Language & Communication Training',
-    description: 'Lingua Franca Classes – Premium English language education and communication training by Ms. Ayeshabi Saheb. Cambridge Checkpoints, IGCSE, A Levels, and ICSE coaching in Mumbai and online.',
+    title: 'Lingua Franca Mumbai | Language Learning & English Speaking',
+    description: 'Explore language learning and English speaking courses with Lingua Franca Mumbai. Discover available courses, services and learning opportunities.',
     canonicalPath: '/',
   });
 
@@ -32,14 +32,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-navy bg-yellow/30 px-3 py-1 rounded-full border border-yellow">
-              Why Lingua Franca
+              Why Lingua Franca Mumbai
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy">
               Key Pedagogical Features
             </h2>
             <div className="w-16 h-1 bg-yellow mx-auto mt-2 rounded-full" />
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed pt-2">
-              Empowering students across international boards with targeted English language instruction.
+              Empowering students in Mumbai and across international boards with targeted language learning and English speaking instruction.
             </p>
           </div>
 

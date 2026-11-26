@@ -5,8 +5,8 @@ import { CompassIcon, ArrowRightIcon } from '../components/common/Icons';
 
 export default function NotFound() {
   useSEO({
-    title: 'Page Not Found | Lingua Franca Classes',
-    description: 'The requested page could not be found on Lingua Franca Classes.',
+    title: 'Page Not Found | Lingua Franca Mumbai',
+    description: 'The requested page could not be found on Lingua Franca Mumbai.',
     canonicalPath: '/404',
   });
 
@@ -25,7 +25,7 @@ export default function NotFound() {
             Page Not Found
           </h1>
           <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-            The destination you are navigating to does not exist or has been relocated within the Lingua Franca portal.
+            The destination you are navigating to does not exist or has been relocated within the Lingua Franca Mumbai portal.
           </p>
         </div>
 

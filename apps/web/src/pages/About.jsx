@@ -15,8 +15,8 @@ import {
 
 export default function About() {
   useSEO({
-    title: 'About Us | Lingua Franca Classes',
-    description: 'Learn about Lingua Franca Classes and Ms. Ayeshabi Saheb. Over 18 years of teaching excellence across Cambridge Checkpoints, IGCSE, A Levels, and ICSE English.',
+    title: 'About Us | Lingua Franca Mumbai',
+    description: 'Learn about Lingua Franca Mumbai and Ms. Ayeshabi Saheb. Over 18 years of excellence providing premier language learning and English speaking classes in Mumbai.',
     canonicalPath: '/about',
   });
 
@@ -27,7 +27,7 @@ export default function About() {
       <section className="relative py-20 bg-navy text-cream border-b-4 border-yellow text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-yellow bg-white/10 px-3 py-1 rounded-full">
-            The Story of Lingua Franca
+            The Story of Lingua Franca Mumbai
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-yellow mt-3 mb-4">
             About Our Academy
@@ -53,7 +53,7 @@ export default function About() {
 
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed">
               <p>
-                Founded on the belief that English is more than an academic requirement—it is the ultimate bridge to international expression and thought—<strong className="text-navy">Lingua Franca – The English Tutorials</strong> has been a benchmark of excellence for students in Mumbai and across the world for over 18 years.
+                Founded on the belief that English is more than an academic requirement—it is the ultimate bridge to international expression and thought—<strong className="text-navy">Lingua Franca Mumbai</strong> has been a benchmark of excellence for language learners and students in Mumbai and across the world for over 18 years.
               </p>
               <p>
                 We specialise in guiding students through the world's most rigorous international curricula, including <span className="font-semibold text-navy">Cambridge Checkpoints, IGCSE First Language English, IGCSE English as a Second Language, A Levels</span>, as well as the national <span className="font-semibold text-navy">ICSE</span> curriculum.
@@ -135,7 +135,7 @@ export default function About() {
               <div className="mt-8 space-y-1">
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold text-cream">Ms. Ayeshabi Saheb</h3>
                 <p className="text-yellow text-sm font-semibold">Founder & Head English Educator</p>
-                <p className="text-cream/80 text-sm">Lingua Franca – The English Tutorials</p>
+                <p className="text-cream/80 text-sm">Lingua Franca Mumbai</p>
               </div>
 
               {/* Direct Contact CTAs */}

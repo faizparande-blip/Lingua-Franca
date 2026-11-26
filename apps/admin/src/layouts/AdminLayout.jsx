@@ -47,7 +47,7 @@ export default function AdminLayout() {
             LF
           </div>
           <div>
-            <span className="font-serif font-bold text-sm text-yellow block leading-none">Lingua Franca</span>
+            <span className="font-serif font-bold text-sm text-yellow block leading-none">Lingua Franca Mumbai</span>
             <span className="text-[10px] text-cream/70 uppercase tracking-widest">Admin Portal</span>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function AdminLayout() {
               </div>
               <div>
                 <span className="font-serif font-bold text-base text-yellow block leading-none">
-                  Lingua Franca
+                  Lingua Franca Mumbai
                 </span>
                 <span className="text-[10px] text-cream/70 uppercase tracking-widest font-semibold">
                   Admin Portal
@@ -185,7 +185,7 @@ export default function AdminLayout() {
               {getPageTitle()}
             </h2>
             <p className="text-xs text-navy/50">
-              Lingua Franca Official Administration
+              Lingua Franca Mumbai Administration
             </p>
           </div>
 
